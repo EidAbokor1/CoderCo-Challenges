@@ -1,0 +1,18 @@
+[Unit]
+Description=CoderCo Python App
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=appuser
+WorkingDirectory=/opt/coderco-app
+ExecStart=/usr/bin/python3 /opt/coderco-app/server.py
+EnvironmentFile=/opt/coderco-app/.env
+Restart=always
+RestartSec=1
+StandardOutput=append:/var/log/coderco-app.log
+StandardError=append:/var/log/coderco-app.log
+
+[Install]
+WantedBy=multi-user.target
