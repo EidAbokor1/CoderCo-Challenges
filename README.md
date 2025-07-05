@@ -11,7 +11,7 @@ This repository contains various DevOps and Linux challenges completed as part o
 - Enables and starts the service on boot
 - Bonus: firewall restricting port 8080 to localhost, healthcheck script with cronjob
 
-See [`challenge-1/coderco-project-1/README.md`](challenge-1/coderco-project-1/README.md) for detailed steps and files.
+See [`challenge-1/README.md`](challenge-1/README.md) for detailed steps and files.
 
 ---
 
